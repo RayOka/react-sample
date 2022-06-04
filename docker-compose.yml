@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 services:
   app:
     build: .
@@ -8,3 +8,4 @@ services:
       - ./:/app/sampleApp
     working_dir: /app/sampleApp
     container_name: sampleApp
+    command: sh -c "cd react-sample && yarn start"
