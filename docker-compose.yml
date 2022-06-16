@@ -9,3 +9,4 @@ services:
     working_dir: /app/sampleApp
     container_name: sampleApp
     command: sh -c "cd react-sample && yarn start"
+    tty: true
